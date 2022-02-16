@@ -1,36 +1,12 @@
-@keyframes animateBtn {
-    0% {
-        transform: translateY(100%);
-    }
-    /* 50% {
-        transform: rotate(45deg);
-    } */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    transition: transform 400ms;
 }
 
-.btn {
-    margin: 100px 0 0 100px;
-    width: 20px;
-    height: 10px;
-    position: relative;
-}
-
-.btn__icon--top {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-
-.btn:hover .btn__icon--top {
-    animation-name: animateBtn;
-    animation-duration: 2000ms;
-    /* animation-direction: alternate; */
-    animation-fill-mode: forwards;
-}
-
-.btn__icon--bottom {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 2;
+img:hover,
+img:focus {
+    transform: scale(1.1);
 }
